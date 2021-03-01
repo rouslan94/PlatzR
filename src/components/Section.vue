@@ -19,12 +19,12 @@
 							</a>
                           <div id="wrapper-part-info">
                             <div class="part-info-image"><img src="img/icon-psd.svg" alt="" width="28" height="28"/></div>
-                            <div id="part-info">Wordpress nnnnn</div>
+                            <div id="part-info">Wordpress</div>
 						</div>
                       </figure>
 </div>
 
-            
+
 					</section>
 
 				</div>
@@ -44,7 +44,7 @@ data:null,
      }
   },
   mounted(){
-  axios.get('http://localhost:8000/api/articles').then((response) => {
+  axios.get('https://jsonplaceholder.typicode.com/albums').then((response) => {
 	this.data = response.data;
 	console.log(this.data.titre)
     }).catch((error) => {

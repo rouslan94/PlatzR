@@ -21,7 +21,7 @@
 		<div class="container-footer">
 
             <div id="row-1f">
-            <div class="text-row-1f"><span style="font-weight:600;font-size:15px;color:#666;line-height:250%;text-transform:uppercase;letter-spacing:1.5px;">What is Platz</span><br>Platz is a blog showcasing hand-picked free themes, design stuff, free fonts and other resources for web designers.</div>
+            <div class="text-row-1f"><span style="font-weight:600;font-size:15px;color:#666;line-height:250%;text-transform:uppercase;letter-spacing:1.5px;">What is platz</span><br>Platz is a blog showcasing hand-picked free themes, design stuff, free fonts and other resources for web designers.</div>
             </div>
 
             <div id="row-2f">
@@ -64,6 +64,11 @@
 <script>
 export default {
   name: 'Footer',
+    computed: {
+      name(){
+          return this.$store.getters.getName
+      }
+    }
 }
 </script>
 
